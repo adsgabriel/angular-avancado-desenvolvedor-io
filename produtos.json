@@ -10,59 +10,59 @@
         },
         {
             "id": 2,
-            "nome": "Teclado Razer",
+            "nome": "Celular",
             "valor": 1500.00,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "teclado.jpg"
-        },
-        {
-            "id": 3,
-            "nome": "Macbook Pro",
-            "valor": 22500.30,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "macbook.jpg"
-        },
-        {
-            "id": 4,
-            "nome": "Monitor Asus",
-            "valor": 1399.89,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "monitor.jpg"
-        },
-        {
-            "id": 5,
-            "nome": "mouse Corsair",
-            "valor": 299.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "mouse.jpg"
-        },
-        {
-            "id": 6,
-            "nome": "ssd",
-            "valor": 199.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "ssd.jpg"
-        },
-        {
-            "id": 7,
-            "nome": "Iphone 13 Pro",
-            "valor": 7000.00,
             "promocao": false,
             "valorPromo": 0,
             "imagem": "celular.jpg"
         },
         {
+            "id": 3,
+            "nome": "webcam",
+            "valor": 250.30,
+            "promocao": true,
+            "valorPromo": 130.00,
+            "imagem": "webcam.jpg"
+        },
+        {
+            "id": 4,
+            "nome": "headset",
+            "valor": 1399.89,
+            "promocao": false,
+            "valorPromo": 0,
+            "imagem": "headset.jpg"
+        },
+        {
+            "id": 5,
+            "nome": "Teclado",
+            "valor": 299.90,
+            "promocao": true,
+            "valorPromo": 100,
+            "imagem": "teclado.jpg"
+        },
+        {
+            "id": 6,
+            "nome": "monitor",
+            "valor": 199.90,
+            "promocao": false,
+            "valorPromo": 0,
+            "imagem": "monitor.jpg"
+        },
+        {
+            "id": 7,
+            "nome": "Notebook",
+            "valor": 7000.00,
+            "promocao": false,
+            "valorPromo": 0,
+            "imagem": "laptop.jpg"
+        },
+        {
             "id": 8,
-            "nome": "fone Asus",
+            "nome": "Mouse Pad",
             "valor": 189.99,
             "promocao": false,
             "valorPromo": 0,
-            "imagem": "fone.jpg"
+            "imagem": "mousepad.jpg"
         }
     ]
 }
