@@ -7,6 +7,7 @@ import { SobreComponent } from "./institucional/sobre/sobre.component";
 import { HomeComponent } from "./navegacao/home/home.component";
 import { NotFoundComponent } from "./navegacao/not-found/not-found.component";
 import { ListaProdutoComponent } from "./produtos/lista-produto/lista-produto.component";
+import { AuthGuard } from "./services/app.guard";
 
 
 const rootRouterConfig: Routes = [
@@ -21,13 +22,17 @@ const rootRouterConfig: Routes = [
     {path: 'produtos', 
         loadChildren: () => import('./demos/arquitetura-componentes/produto.module')
         .then(m => m.ProdutoModule)},
+    {path: 'admin',
+            loadChildren: () => import('./demos/admin/admin.module')
+            .then(m => m.AdminModule),
+            canLoad: [AuthGuard]},
 
     {path: '**', component: NotFoundComponent}, //sempre deixar por ultimo
 ];
 
 @NgModule({
     imports:[
-        RouterModule.forRoot(rootRouterConfig)
+        RouterModule.forRoot(rootRouterConfig, { enableTracing: false })
     ],
     exports:[
         RouterModule,

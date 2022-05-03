@@ -18,6 +18,8 @@ import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.compo
 import { NavegacaoModule } from './navegacao/navegacao.module';
 
 import { AppRoutingModule } from './app.routes';
+import { AuthGuard } from './services/app.guard';
+
 
 
 @NgModule({
@@ -28,6 +30,7 @@ import { AppRoutingModule } from './app.routes';
     DataBindingComponent,
     ListaProdutoComponent,
     CadastroComponent,
+
 
   ],
   imports: [
@@ -43,6 +46,7 @@ import { AppRoutingModule } from './app.routes';
   ],
   providers: [
     ProdutoService,
+    AuthGuard
    
   ],
   bootstrap: [AppComponent]
