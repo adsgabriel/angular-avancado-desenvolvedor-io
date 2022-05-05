@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { APP_BASE_HREF } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgBrazil } from 'ng-brazil'; 
 import { TextMaskModule } from 'angular2-text-mask'
 import { CustomFormsModule } from 'ng2-validation';
+
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+registerLocaleData(localePt);
 
 import { AppComponent } from './app.component';
 
@@ -19,6 +22,10 @@ import { NavegacaoModule } from './navegacao/navegacao.module';
 
 import { AppRoutingModule } from './app.routes';
 import { AuthGuard } from './services/app.guard';
+import { CadastroGuard } from './services/cadastro.guard';
+import { FilmesComponent } from './demos/pipes/filmes/filmes.component';
+import { FileSizePipe } from './demos/pipes/filmes/filesize.pipe';
+import { ImageFormaterPipe } from './demos/pipes/filmes/image.pipe';
 
 
 
@@ -30,7 +37,9 @@ import { AuthGuard } from './services/app.guard';
     DataBindingComponent,
     ListaProdutoComponent,
     CadastroComponent,
-
+    FilmesComponent,
+    FileSizePipe,
+    ImageFormaterPipe,
 
   ],
   imports: [
@@ -46,7 +55,8 @@ import { AuthGuard } from './services/app.guard';
   ],
   providers: [
     ProdutoService,
-    AuthGuard
+    AuthGuard,
+    CadastroGuard
    
   ],
   bootstrap: [AppComponent]
