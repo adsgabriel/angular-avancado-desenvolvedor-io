@@ -1,0 +1,5 @@
+<div class="tasks">
+    <app-todo-list [list]="finalizados$ | async" (toggle)="onToggle($event)">
+        Finalizadas
+    </app-todo-list>
+</div>
